@@ -1,0 +1,124 @@
+
+.agenda-content, .about-section, .traditions-content{ 
+
+text-align:center; 
+margin: 20px 0px;
+} 
+
+.agenda-header, .about-header, .traditions-header{ 
+
+font-size: 3em; 
+margin-bottom: 10px;
+padding: 5px;
+} 
+
+.agenda-description, .traditions-description{ 
+
+font-size:20px; 
+line-height:1.2; 
+padding: 10px;
+} 
+
+.agenda-items,.traditions-items{margin-top:15px;} 
+
+.agenda-link::before,.about-image::before,.tradition-link::before, .committee-image::before{ 
+
+position:absolute; 
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; 
+content: ''; 
+background-color:rgba(0,0,0,0.4); 
+}  
+
+.agenda-link,.tradition-link{ 
+
+border-bottom: 1px solid #EEE;
+box-shadow: 0px 1px 2px #fff;
+height: 235px;
+width: 100%;
+display: inline-block;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center; 
+position:relative; 
+z-index: 2; 
+box-shadow: 1px 1px 1px #000;
+border: 1px solid #000; 
+transition: all .2s ease-in-out;
+} 
+ 
+ .agenda-link:hover,.tradition-link:hover{ 
+ 
+ transform: scale(1.1);
+ }
+
+.agenda-title, .tradition-title{ 
+
+position: absolute;
+top: 50%;
+width: 100%;
+font-size: 35px;
+
+} 
+
+.wrap{  
+
+position: relative;
+z-index: 9;
+padding: 90px;
+
+} 
+
+
+.about-image, .committee-image{ 
+
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+} 
+
+.about-content,.committee-content{ text-align: center;}  
+
+.about-description p, .committee-description p{ 
+
+font-size: 20px;
+line-height: 1.7; 
+margin-bottom:30px;
+} 
+
+.committee-content a{ 
+padding: 5px 20px;
+border-radius: 2px; 
+color:#fff; 
+background-color:#000;
+}  
+
+
+
+/*mobile styles*/ 
+
+@media (min-width: 600px) and (max-width: 1024px){  
+
+.agenda-header, .traditions-header{ 
+
+font-size: 2em;
+} 
+
+.wrap {
+   
+ padding: 15px;
+}
+
+.about-content, .committee-content {
+    text-align: justify;
+} 
+
+.about-header, .committee-content h1{
+    
+text-align: center;
+} 
+
+
+}
